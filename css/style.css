@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+  --priColor: #4F0092;
+  --secColor: #CFCFCF;
+  --tirColor: #EEEEEE;
+  --fouColor: #000;
+}
+.container {
+  width:1200px;
+  background-color: var(--tirColor);
+  height:800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+header {
+  width:96%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--priColor);
+  color:var(--tirColor);
+  border-radius: 10px;
+}
+header h1{
+  font-size: 45px;
+}
+.divForm {
+  width:500px;
+  height:600px;
+  background-color: var(--secColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  padding:10px;
+  border-radius: 10px;
+}
+#form{
+  margin-top: 40px;
+  width:100%;
+}
+#form>h1{
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: var(--priColor);
+}
+.inputField {
+  width: 100%;
+  height:60px;
+  margin-top:20px;
+  position:relative;
+}
+.inputField input {
+  background-color: transparent;
+  border: none;
+  border-bottom:1px solid var(--priColor);
+  outline:none;
+  transition: all .2s ease;
+  height:40px;
+  width:100%;
+  font-size: 20px;
+}
+#form button {
+  border:none;
+  width:110px;
+  height:80px;
+  font-size: 20px;
+  font-weight: bold;
+  border:1px solid var(--priColor);
+  border-radius: 10px;
+  color:var(--priColor);
+  background-color: transparent;
+  transition: all .2s ease;
+  margin-top: 10px;
+}
+#form button:hover{
+  transform: scale(.9);
+  border:2px solid var(--priColor);
+  letter-spacing: 2px;
+}
+#link {
+  text-decoration: none;
+  margin-top: 50px;
+}
+@media (max-width: 450px) {
+  .container {
+    width:450px;
+  }
+  header {
+    height: 50px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  .divForm {
+    width:350px;
+    height:600px;
+    margin-top: 20px;
+    padding:5px;
+    border-radius: 10px;
+  }
+  #form>h1 {
+    font-size: 30px;
+  }
+  #form button {
+    border:none;
+    width:60px;
+    height:40px;
+    font-size: 10px;
+    font-weight: bold;
+    border:1px solid var(--priColor);
+    border-radius: 10px;
+    color:var(--priColor);
+    background-color: transparent;
+    transition: all .2s ease;
+    margin-top: 10px;
+  }
+}

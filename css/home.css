@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+  --priColor: #4F0092;
+  --secColor: #CFCFCF;
+  --tirColor: #EEEEEE;
+  --fouColor: #000;
+}
+.container {
+  width:1200px;
+  background-color: var(--tirColor);
+  height:800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+header {
+  width:96%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--priColor);
+  color:var(--tirColor);
+  border-radius: 10px;
+}
+header h1{
+  font-size: 45px;
+}
+#sectionHeader {
+  width:100%;
+  margin-top: 20px;
+}
+.containerSection {
+  display: flex;
+  flex-direction: column;
+}
+.user{
+  display:flex;
+  justify-content: space-around;
+  padding: 5px;
+  
+}
+.user h1 {
+  font-size: 28px;
+}
+.user button {
+  width:80px;
+  height:50px;
+  font-size: 30px;
+  border:none;
+  border-radius: 10px;
+  color:var(--priColor);
+  background-color: var(--tirColor);
+  transition:all .2s ease;
+}
+.user button:hover {
+  background-color: var(--priColor);
+  color:var(--tirColor);
+}
+.saldo {
+  margin-top: 20px;
+  padding:10px;
+}
+#sectionOperations {
+  width:100%;
+  margin-top: 40px;
+}
+.operationsBtns {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.operationsBtns button {
+  width:300px;
+  height:200px;
+  margin:20px;
+  font-size: 50px;
+  border-radius: 20px;
+  border:none;
+  font-weight: bold;
+  background-color:var(--priColor);
+  color:var(--tirColor);
+  transition:all .2s ease;
+}
+.operationsBtns button:hover {
+  background-color: var(--tirColor);
+  color:var(--priColor);
+}
+
+@media (max-width: 450px) {
+  .container {
+    width:450px;
+    height:800px;
+  }
+  header {
+    height:50px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  .operationsBtns button {
+    width:1p0px;
+    height:70px;
+    margin:10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
